@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+
+	<title>Secure Payment</title>
+</head>
+<body>
+
+
+
+
+
+<div class="container outer">
+<div class="row">
+ 
+<div class="container">
+
+
+<!-- CREDIT CARD FORM STARTS HERE -->
+<div class="panel panel-default credit-card-box">
+<div class="panel-heading display-table" >
+<div class="row display-tr" >
+<h3 class="panel-title display-td" >Payment Details</h3>
+<div class="display-td" >                            
+<img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+</div>
+</div>                    
+</div>
+<div class="panel-body">
+<form role="form" id="payment-form">
+<div class="row">
+<div class="col-xs-12">
+<div class="form-group">
+<label for="cardNumber">CARD NUMBER</label>
+<div class="input-group">
+<input 
+type="tel"
+class="form-control"
+name="cardNumber"
+placeholder="Valid Card Number"
+autocomplete="cc-number"
+required autofocus 
+/>
+<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+</div>
+</div>                            
+</div>
+</div>
+<div class="row">
+<div class="col-xs-7 col-md-7">
+<div class="form-group">
+<label for="cardExpiry"><span class="hidden-xs">EXPIRATION</span><span class="visible-xs-inline">EXP</span> DATE</label>
+<input 
+type="tel" 
+class="form-control" 
+name="cardExpiry"
+placeholder="MM / YY"
+autocomplete="cc-exp"
+required 
+/>
+</div>
+</div>
+<div class="col-xs-5 col-md-5 pull-right">
+<div class="form-group">
+<label for="cardCVC">CV CODE</label>
+<input 
+type="tel" 
+class="form-control"
+name="cardCVC"
+placeholder="CVC"
+autocomplete="cc-csc"
+required
+/>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<div class="form-group">
+<label for="couponCode">COUPON CODE</label>
+<input type="text" class="form-control" name="couponCode" />
+</div>
+</div>                        
+</div>
+<div class="row">
+<div class="col-xs-12">
+<button class="btn btn-success btn-lg btn-block" type="submit">Pay Now</button>
+</div>
+</div>
+<div class="row" style="display:none;">
+<div class="col-xs-12">
+<p class="payment-errors"></p>
+</div>
+</div>
+</form>
+</div>
+</div>            
+<!-- CREDIT CARD FORM ENDS HERE -->
+
+
+</div>            
+<br><br><br>
+				
+
+
+</div>
+</div>	
+
+
+<br><br><br><center>
+<div class="container">
+					
+					<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="VCELY78CK4E6N">
+<table>
+<tr><td><input type="hidden" name="on0" value="Select Specs">Select Specs</td></tr><tr><td><select name="os0">
+	<option value="8GB RAM 500HDD">8GB RAM 500HDD $500.00 USD</option>
+	<option value="16GB RAM 3T HDD">16GB RAM 3T HDD $1,000.00 USD</option>
+	<option value="32GB RAM 5T HDD">32GB RAM 5T HDD $2,000.00 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+
+				</div></center>
+
+		
